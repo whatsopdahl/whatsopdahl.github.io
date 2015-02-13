@@ -1,0 +1,25 @@
+body {
+	background-image: url("snowflake.jpeg");
+	background-image-repeat: repeat;
+	padding: 25px;
+	text-align: center;
+	color: black;
+
+}
+ul {
+	list-style: none;
+}
+.inputs {
+	position: relative;
+	left: -15px;
+}
+img {
+	display: inline;
+}
+form {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	background: lightblue;
+	width: 200px;
+}
