@@ -229,7 +229,20 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
     background-color: #005EA8;
 }
-
+.navbabr-header a .navbar-default img #mainLogo {
+    position:absolute;
+    display: inline;
+    top:0px;
+    z-index:2;
+}
+.navbabr-header a .navbar-default img  #HoverMainLogo {
+    position:absolute;
+    display:inline;
+    top:0px;
+}
+.navbabr-header a .navbar-default img #mainLogo:hover {
+    display:hidden;
+}
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
