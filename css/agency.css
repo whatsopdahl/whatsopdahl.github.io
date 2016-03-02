@@ -831,8 +831,8 @@ ul.social-buttons li a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
+    text-align: center;
 }
-
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
@@ -992,4 +992,7 @@ width: 0;
 z-index: 1;
 top: -15px;
 left: 95px;
+}
+.contact-me{
+    list-style-type: none;
 }
