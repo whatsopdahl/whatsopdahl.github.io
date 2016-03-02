@@ -1,9 +1,9 @@
 $( document ).ready(function(){
 	//define Images
 	var image = new Image();
-	image.src= "/img/worldMap.png";
+	image.src= "img/worldMap.png";
 	var plane = new Image();
-	plane.src="/img/Airplane.png";
+	plane.src="img/Airplane.png";
 	var canvas = this.getElementById('fundsAnimation');
 	$bg = $('#fundsAnimation').parent();
 	var ctx = canvas.getContext("2d");
