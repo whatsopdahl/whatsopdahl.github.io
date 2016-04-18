@@ -1,0 +1,45 @@
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+	<header>
+		<h1> Complementary Angles Exploration </h1>
+		<h3> Follow the worksheet to explore the relationship between complementary angles and trigonometric functions </h3>
+	</header>
+	<div class="instructions">
+		<h5>Using what you have learned, find the angle ans side measures in the following diagram.</h5>
+	</div>	
+	<div id="content">
+		<div class="left">
+			<canvas id="myCanvas" height="300" width="300"></canvas>
+		</div>
+		<div class="right">
+			<form id="observation-form">
+				<ul type="none">
+					<li id='a'> a = <input type="text" size='5' name='a'></input>&deg;</li>
+					<li id='b'> b = <input type="text" size='5' name='b'></input>&deg;</li>
+					<li id='c'> c = <input type="text" size='5' name='c'></input>&deg;</li>
+					<li id='d'> d = <input type="text" size='5' name='d'></input>&deg;</li>
+					<li id='e'> e = <input type="text" size='5' name='e'></input>&deg;</li>
+					<li id='f'> f = <input type="text" size='5' name='f'></input>&deg;</li>
+					<li id='g'> g = <input type="text" size='5' name='g'></input>&deg;</li>
+				</ul>
+				<button type="button" id="check-answers" onclick="checkAnswers(4)">Check Answers</button>
+			</form> <br>
+			<div class="success">
+				<p> Way to go!! Click the next button to review the material covered in the last few pages.</p>
+			</div>
+			<p class="fail"> That's not quite right... Remember the 45-45-90 triangle and look for complementary angles.</p>
+		</div>
+	</div>
+
+	<footer>
+		<button id="prev" onclick="prevPage()">Previous</button>
+		<button id="next" onclick="nextPage()">Next</button>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/triangle_exercises.js"></script>
+	<script type="text/javascript" src="js/ed_funcs.js"></script>
+	<script type="text/javascript" src="js/page_navigation.js"></script>
+</body>

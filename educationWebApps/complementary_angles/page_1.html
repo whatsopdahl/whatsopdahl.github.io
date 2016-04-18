@@ -1,0 +1,68 @@
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+	<header>
+		<h1> Complementary Angles Exploration </h1>
+		<h3> Follow the worksheet to explore the relationship between complementary angles and trigonometric functions </h3>
+	</header>
+	<div class="instructions">
+		<h5> Below there is a right triangle. Click on a vertex and drag it to create a new right triangle. Record the value of the angles A and B in the appropriate boxes in the table on the right. Then, determine if angles A and B are a complementary pair. Repeat until you have made three different right triangles. You can check your answers at any time by clicking the 'check answers' button. </h5>
+	</div>	
+	<div id="content">
+		<div class="left">
+			<canvas id="myCanvas" height="300" width="300"></canvas>
+		</div>
+		<div class="right">
+			<form id="observation-form">
+				<table>
+					<tr>
+						<th> Triangle </th>
+						<th> Angle A </th>
+						<th> Angle B </th>
+						<th> Are A and B complementary? </th>
+					</tr>
+					<tr>
+						<td> 1 </td>
+						<td><input type="text" id="a1" size="5"></input>&deg;</td>
+						<td><input type="text" id="b1" size="5">&deg;</input></td>
+						<td>
+							<input type="radio" name="comp1" value="1"> Yes </input>
+							<input type="radio" name="comp1" value="0"> No </input>
+						</td>
+					</tr>
+					<tr>
+						<td> 2 </td>
+						<td><input type="text" id="a2" size="5">&deg;</input></td>
+						<td><input type="text" id="b2" size="5">&deg;</input></td>
+						<td>
+							<input type="radio" name="comp2" value="1"> Yes </input>
+							<input type="radio" name="comp2" value="0"> No </input>
+						</td>
+					</tr>
+					<tr>
+						<td> 3 </td>
+						<td><input type="text" id="a3" size="5">&deg;</input></td>
+						<td><input type="text" id="b3" size="5">&deg;</input></td>
+						<td>
+							<input type="radio" name="comp3" value="1"> Yes </input>
+							<input type="radio" name="comp3" value="0"> No </input>
+						</td>
+					</tr>
+				</table>
+				<button type="button" id="check-answers" onclick="checkAnswers(1)">Check Answers</button>
+			</form> <br>
+			<p class="success"> Good job! Notice that no matter what the triangle, angle A and B always sum to 90&deg;. Click on the next button to move on.</p>
+			<p class="fail"> Not quite. Recall the definition of complementary... </p>
+		</div>
+		<div id="section1">
+		</div>
+	</div>
+
+	<footer><button id="next" onclick="nextPage()">Next</button></footer>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/draggable_tri.js"></script>
+	<script type="text/javascript" src="js/ed_funcs.js"></script>
+	<script type="text/javascript" src="js/page_navigation.js"></script>
+</body>

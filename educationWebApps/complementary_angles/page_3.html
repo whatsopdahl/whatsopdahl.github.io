@@ -1,0 +1,55 @@
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+	<header>
+		<h1> Complementary Angles Exploration </h1>
+		<h3> Follow the worksheet to explore the relationship between complementary angles and trigonometric functions </h3>
+	</header>
+	<div class="instructions">
+		<h5>You should have noticed that sin(&alpha;)=cos(&beta;) and sin(&beta;)=cos(&alpha;). Recall that, from the first page &alpha; and &beta; were <em>complementary</em> angles. What does that mean about sin(&alpha;) and cos(&beta;)?</h5>
+	</div>	
+	<div id="content">
+		<div class="left">
+			<canvas id="myCanvas" height="300" width="300"></canvas>
+		</div>
+		<div class="right">
+			<form id="observation-form">
+				<div id="q1">
+					<label> &alpha; + &beta; = <input type="text" name="Q1" size="5"></input>&deg;</label><br>
+				</div>
+				<div id="q2">
+					<label> This means that &alpha; = <input type="text" name="Q2" size="10"></input></label>
+				</div>
+				<div id="q3">
+					<label> and &beta; = <input type="text" name="Q3" size="10"></input></label>
+				</div>
+				<div id="q4">
+					<label> Using this, and the fact that sin(&alpha;)=cos(&beta;),<br>sin(&alpha;) = cos(<input type="text" name="Q4" size="10"></input>)</label><br>
+				</div>
+				<div> It also means:
+					<ol>
+						<li id="q5">cos(&alpha;) = <input type="text" name="Q5" size="15"></input> (in terms of &alpha;)</li>
+						<li id="q6">sin(&beta;) = <input type="text" name="Q6" size="15"></input> (in terms of &beta;)</li>
+						<li id="q7">cos(&beta;) = <input type="text" name="Q7" size="15"></input>  (in terms of &beta;)</li>
+					</ol>
+				</div>
+				<button type="button" id="check-answers" onclick="checkAnswers(3)">Check Answers</button>
+			</form> <br>
+			<div class="success">
+				<p> Excellent! Because &alpha; and &beta; are complementary, we can write &alpha; = 90&deg; - &beta; and &beta; = 90&deg; - &alpha;. This means sin(&alpha;) = cos(&beta;) = cos(&alpha;-90&deg;).</p>
+			</div>
+			<p class="fail">Use a capital 'B' to represent the angle &beta; and a lower case 'a' to represent &alpha; in your answers. Also, remember that sin(&alpha;)=cos(&beta;).</p>
+		</div>
+	</div>
+
+	<footer>
+		<button id="prev" onclick="prevPage()">Previous</button>
+		<button id="next" onclick="nextPage()">Next</button>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/example_triangle.js"></script>
+	<script type="text/javascript" src="js/ed_funcs.js"></script>
+	<script type="text/javascript" src="js/page_navigation.js"></script>
+</body>
