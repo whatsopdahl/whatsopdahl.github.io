@@ -8,7 +8,7 @@ $( document ).ready(function(){
 	$bg = $('#fundsAnimation').parent();
 	var ctx = canvas.getContext("2d");
 	//variables dealing with funds
-	var raised = 1165;
+	var raised = 1790;
 	var percent = raised/5298;
 	var length = 373.162;
 	var destination = percent * length;
