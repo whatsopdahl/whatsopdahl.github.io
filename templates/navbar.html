@@ -1,0 +1,40 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" ng-mouseover="hoverLogo=true" ng-mouseleave="hoverLogo=false" href="/">
+				<img ng-hide="hoverLogo" height="50px" width="auto" src="img/logos/whatsOpdahlLogo.png"/>
+				<img ng-show="hoverLogo" height="50px" width="auto" src="img/logos/whatsOpdahlLogo:hover.png"/>
+			</a>
+		</div>
+		
+		<!-- collect collapsable content -->
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav nav-pills navbar-left">
+				<li ng-class="{ active : page == '/'}"><a href="/">Home</a></li>
+				<li ng-class="{ active : page == '/blog'}"><a href="/blog/latest">Blog</a></li>
+				<li ng-class="{ active : page == '/portfolio'}"><a href="/portfolio">Portfolio</a></li>
+				<li ng-class="{ active : page == '/about'}"><a href="/about">About</a></li>
+				<li ng-class="{ active : page == '/contact'}"><a href="/contact">Contact</a></li>
+			</ul>
+			<ul class="nav nav-pills navbar-right">
+				<li>
+					<a href="" id="login-btn">
+						<span class="glyphicon glyphicon-user"></span>
+						<div ng-if="!user" ng-click="login()">
+							Login
+						</div>
+						<div ng-if="user">
+							{{user.name}}
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
