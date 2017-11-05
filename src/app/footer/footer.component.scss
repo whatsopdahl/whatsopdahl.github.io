@@ -1,0 +1,11 @@
+div {
+  white-space: nowrap;
+  .col {
+    display: inline-block;
+    height : 100%;
+    width : 33%;
+  }
+}
+li {
+  display : inline;
+}

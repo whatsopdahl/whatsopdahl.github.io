@@ -1,0 +1,4 @@
+<button class="btn btn-default" (click)="changeLoginState()">
+  <span *ngIf="authSrv.user.isLoggedIn">Logout</span>
+  <span *ngIf="!authSrv.user.isLoggedIn">Login</span>
+</button>

@@ -1,0 +1,11 @@
+div {
+  white-space: nowrap; }
+  div .col {
+    display: inline-block;
+    height: 100%;
+    width: 33%; }
+
+li {
+  display: inline; }
+
+/*# sourceMappingURL=footer.component.css.map */

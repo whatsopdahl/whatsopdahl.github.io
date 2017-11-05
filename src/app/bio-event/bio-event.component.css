@@ -1,0 +1,32 @@
+.bio-event {
+  position: absolute; }
+
+img {
+  height: auto;
+  width: 30%;
+  border: solid 2px grey; }
+
+.evt-content {
+  box-sizing: content-box;
+  width: 50%;
+  padding: 0 10px; }
+  .evt-content .evt-title {
+    display: block;
+    width: 100%; }
+  .evt-content .evt-desc {
+    display: block;
+    width: 100%; }
+
+.odd img {
+  float: right; }
+.odd .evt-content {
+  float: left;
+  border-right: solid 2px grey; }
+
+.even img {
+  float: left; }
+.even .evt-content {
+  float: right;
+  border-left: solid 2px grey; }
+
+/*# sourceMappingURL=bio-event.component.css.map */

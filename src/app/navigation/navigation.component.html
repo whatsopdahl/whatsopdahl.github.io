@@ -1,0 +1,19 @@
+<div class="navbar-fixed" id="main-nav">
+  <nav>
+    <div class="nav-wrapper">
+      <a routerLink="" class="brand-logo" (mouseenter)="hoverLogo=true" (mouseleave)="hoverLogo=false">
+        <img [hidden]="hoverLogo" src="assets/logos/whatsOpdahlLogo.png"/>
+        <img [hidden]="!hoverLogo" src="assets/logos/whatsOpdahlLogo-hover.png"/>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a routerLink="/_/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+        <li><a routerLink="/_/portfolio" routerLinkActive="active">Portfolio</a></li>
+        <li><a routerLink="/_/resume" routerLinkActive="active">R&eacute;sum&eacute;</a></li>
+        <li><a routerLink="/_/bio" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/_/contact" routerLinkActive="active">Contact</a></li>
+        <li><app-sign-in-btn></app-sign-in-btn></li>
+      </ul>
+    </div>
+  </nav>
+</div>
