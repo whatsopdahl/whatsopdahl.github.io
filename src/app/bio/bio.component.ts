@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { BioEvent } from './bio.event';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-bio',
@@ -11,16 +12,16 @@ export class BioComponent {
 
   constructor() {
     let originEvt : BioEvent = { title : 'Origins',
-                         imgSrc : '../../assets/bio/SW_anchor.jpeg',
+                         imgSrc : `../../${environment.urlPrefix}assets/bio/SW_anchor.jpeg`,
                          desc : this.createOriginDesc()};
     let undergradEvent : BioEvent = { title : 'Undergrad',
-                            imgSrc : '../../assets/bio/norse_helmet.jpg',
+                            imgSrc : `../../${environment.urlPrefix}assets/bio/norse_helmet.jpg`,
                             desc : this.createUndergradDesc()};
     let IbmEvent : BioEvent = { title : 'IBM',
-                            imgSrc : '../../assets/bio/IBM_logo_transparent.png',
+                            imgSrc : `../../${environment.urlPrefix}assets/bio/IBM_logo_transparent.png`,
                             desc : this.createIBMDesc()};
     let IseEvent : BioEvent= { title : 'ISE',
-                      imgSrc : '../../assets/bio/ISE_logo.png',
+                      imgSrc : `../../${environment.urlPrefix}assets/bio/ISE_logo.png`,
                       desc : this.createISEDesc()};
     this.events = [originEvt, undergradEvent, IbmEvent, IseEvent];
   }
