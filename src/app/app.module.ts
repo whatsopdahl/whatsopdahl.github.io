@@ -32,7 +32,7 @@ const appRoutes = [
   { path : "blog", component : BlogComponent },
   { path : "terms", component : TermsComponent },
   { path : "_/:tag", component : BaseComponent, pathMatch: "full"},
-  { path : "/", redirectTo : '_/home', pathMatch : "full"},
+  { path : "", redirectTo : '_/home', pathMatch : "full"},
   { path : "whatsopdahl.com", redirectTo : '_/home', pathMatch : "full"},
   { path : "**", component : PageNotFoundComponent}
 ];
