@@ -1,4 +1,4 @@
-<div #root id="{{evt.title | lowercase}}-event" class="row" [ngClass]="(odd ? 'odd' : 'even')" [@showMe]="show">
+<div #root id="{{evt.title | lowercase}}-event" class="row" [ngClass]="(odd ? 'odd' : 'even')">
   <img class="circle" [src]="evt.imgSrc"/>
   <div class="evt-content" [ngClass]="{'right-align' : odd}">
     <h4>{{evt.title}}</h4>
