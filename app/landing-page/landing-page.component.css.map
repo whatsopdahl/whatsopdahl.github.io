@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,WAAK;EACH,MAAM,EAAG,KAAK;AAEhB,OAAE;EACA,SAAS,EAAG,IAAI",
+"sources": ["landing-page.component.scss"],
+"names": [],
+"file": "landing-page.component.css"
+}
