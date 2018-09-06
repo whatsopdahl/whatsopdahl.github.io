@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,GAAI;EACF,KAAK,EAAG,GAAG;EACX,MAAM,EAAG,IAAI;EACb,MAAM,EAAG,cAAc",
-"sources": ["resume.component.scss"],
-"names": [],
-"file": "resume.component.css"
-}
